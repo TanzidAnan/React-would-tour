@@ -14,7 +14,7 @@ const Countries = () => {
         <div>
             <h3>Countries: {countris.length}</h3>
             {
-                countris.map(countris => <Country country={countris}></Country>)
+                countris.map(countris => <Country key={countris.cca2} country={countris}></Country>)
             }
         </div>
     );
