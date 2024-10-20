@@ -7,7 +7,7 @@ const Country = ({country}) => {
     const [visited,setVisited] =useState(false);
 
     const hendleVisited =() =>{
-        setVisited(true)
+        setVisited(!visited)
     }
 
     return (
@@ -19,8 +19,8 @@ const Country = ({country}) => {
             <p>area: {area}</p>
             <p>population: {population}</p>
             <p><small>Code: {cca3}</small></p>
-            <button className='btn' onClick={hendleVisited}>Visited</button>
-            {visited && 'I Have a visited'}
+            <button className='btn' onClick={hendleVisited}>{visited?'Visited':'Going'}</button>
+            {visited ? 'I Have a visited': 'I one to visite'}
         </div>
     );
 };
