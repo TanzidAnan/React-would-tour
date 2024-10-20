@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Country.css'
+import CountryDetile from '../CountryDetile/CountryDetile';
 const Country = ({country ,hendleVisitedCountery,hendleVisitedFlage}) => {
     // console.log(country)
     const {name,flags,area,population,cca3} =country;
@@ -26,6 +27,12 @@ const Country = ({country ,hendleVisitedCountery,hendleVisitedFlage}) => {
             <button className='btn' onClick={() =>{hendleVisitedCountery(country)}}>Mark visited</button>
             <button className='btn' onClick={hendleVisited}>{visited?'Visited':'Going'}</button>
             {visited ? 'I Have a visited': 'I one to visite'}
+            <hr />
+            <CountryDetile
+            country={country}
+            hendleVisitedCountery={hendleVisitedCountery}
+            hendleVisitedFlage={hendleVisitedFlage}
+            ></CountryDetile>
         </div>
     );
 };

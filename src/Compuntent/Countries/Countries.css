@@ -5,8 +5,8 @@
     border-radius: 9px;
 }
 .flage-container{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 40px;
     display: flex;
     gap: 15px;
 }
