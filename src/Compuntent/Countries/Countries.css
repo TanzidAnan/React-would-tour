@@ -4,3 +4,13 @@
     gap: 10px;
     border-radius: 9px;
 }
+.flage-container{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    gap: 15px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
