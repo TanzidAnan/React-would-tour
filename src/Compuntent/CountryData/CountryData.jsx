@@ -1,8 +1,9 @@
 
-const CountryData = () => {
+const CountryData = ({country,hendleVisitedCountery,hendleVisitedFlage}) => {
+    
     return (
         <div>
-            <h4>Country Data</h4>
+            <h4>Country Data : {country.name.common}</h4>
         </div>
     );
 };
