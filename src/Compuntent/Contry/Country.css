@@ -21,3 +21,6 @@ img{
     font-weight: 700;
     border-radius: 5px;
 }
+.visited{
+    background-color: rgba(197, 182, 210);
+}

@@ -11,7 +11,7 @@ const Country = ({country}) => {
     }
 
     return (
-        <div className='country'>
+        <div className={`country ${visited && 'visited'}`}>
             <h5>Name:{name?.common} </h5>
             <div className='img-div'>
             <img src={flags.png} alt="" />
