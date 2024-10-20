@@ -13,22 +13,25 @@ const Countries = () => {
     }, []);
     const hendleVisitedCountery = countery =>{
         console.log(54545)
-        console.log(countery)
+        // visitedCountery.push(countery)
+        const newVisitedCountry =[...visitedCountery, countery];
+        setvisitedCountery(newVisitedCountry)
     }
-     console.log(countris)
     return (
         <div>
             <h3>Countries: {countris.length}</h3>
             <div>
-                <h3>visited Country</h3>
+                <h3>visited Country  {visitedCountery.length}</h3>
                 <ul>
-
+                {
+                    visitedCountery.map(countri => <li key={countri.cca3}>{countri.name.common}</li>)
+                }
                 </ul>
             </div>
             <div className="country-conterner">
                 {
                     countris.map(countris => <Country
-                         key={countris.cca2} 
+                         key={countris.cca3} 
                          country={countris}
                          hendleVisitedCountery={hendleVisitedCountery}
                          ></Country>)
